@@ -4,6 +4,7 @@ plugins {
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
 	jcenter()
@@ -16,4 +17,5 @@ dependencies {
 gretty {
 	httpPort = 7777
 	contextPath = "/"
+	servletContainer = 'jetty9'
 }
